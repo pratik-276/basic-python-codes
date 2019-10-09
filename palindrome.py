@@ -1,11 +1,11 @@
-n=int(input("Enter a number="))
-copy=n
-sum=0
-while n>0:
-    d=n%10;
-    sum+=d**3
-    n//=10
-if sum==copy:
-    print(copy,"is armstrong")
+n=int(input("Enter number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("The number is a palindrome!")
 else:
-    print(copy,"is not armstrong")
+    print("The number isn't a palindrome!")
